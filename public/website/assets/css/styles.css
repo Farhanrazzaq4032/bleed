@@ -1,0 +1,333 @@
+/* Import Oswald font family */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root{
+    --primary: #F31537;
+    --secondary: #121212;
+    --darkgray: #272121;
+    --lightgray: #6E6E6E;
+}
+.radius-12px{
+    border-radius: 12px;
+}
+.text-lightgray{
+    color: var(--lightgray);
+}
+.text-lightgray2{
+    color: #F8F8F8;
+}
+.text-right{
+    text-align: right;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-24{
+    font-size: 24px;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+.font-weight-400{
+    font-weight: 400;
+}
+.font-weight-300{
+    font-weight: 300;
+}
+.bg-darkgray{
+    background-color: var(--darkgray);
+}
+.p-20px{
+    padding: 20px;
+}
+.mt-60-r{
+    margin-top: 60px;
+}
+body{
+    background-color: #000;
+    font-family: "Oswald", sans-serif;
+}
+.page-title{
+    font-size: 32px;
+}
+.logo-container, .sidebar-container, .main-content{
+    background-color: var(--secondary);
+}
+.sidebar-nav .sidebar-nav-menu .menu-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar-nav .sidebar-nav-menu :is(.menu-item.active, .menu-item:hover){
+    background-color: var(--primary);
+}
+.main-content{
+    padding: 24px 40px;
+}
+.main-content.first-main{
+    padding: 20px 24px;
+    height: 100%;
+}
+.main-content.bg-gradient-artist{
+    background: linear-gradient(180.08deg, #5C393F -3.6%, #121212 11.97%);
+}
+.main-content .header{
+    padding-bottom: 70px;
+}
+nav.navbar-main ul.navbar-nav li a{
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 40px;
+}
+nav.navbar-main ul.navbar-nav li a.active{
+    font-size: 20px;
+    font-weight: 700;
+}
+.logo-mobile{
+    width: 100px;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,555, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    font-size: 28px;
+    border-color: #fff;
+    border: none;
+}
+.artist-album-title{
+    text-transform: uppercase;
+}
+#sidebarOffcanvas{
+    width: 300px;
+}
+.artist-card .artist-album-img-wrapper img{
+    height: 300px;
+    object-fit: cover;
+}
+.artist-breadcrumb .breadcrumb .breadcrumb-item{
+    color: #fff;
+    font-weight: 700;
+}
+.artist-breadcrumb .breadcrumb li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: sub;
+    line-height: 2.25rem;
+}
+.artist-breadcrumb .breadcrumb .breadcrumb-item.active{
+    font-size: 24px;
+}
+.artist-breadcrumb .breadcrumb li.breadcrumb-item a:hover, .icon-list a:hover{
+    text-decoration: underline !important;
+}
+.artist-breadcrumb .breadcrumb-item+.breadcrumb-item::before{
+    color: var(--primary);
+    content: url('../imgs/breadcrumb-chevreon.svg');
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: -3px;
+}
+.artist-navbar-v2{
+    border-radius: 12px;
+    background: linear-gradient(67.36deg, #121212 -38.31%, #5C393F 110.85%);
+}
+.logo-desktop a img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 132px;
+    object-fit: contain;
+}
+.sidebar .logo-desktop a img{
+    max-height: 100px;
+}
+.logo-l a img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 132px;
+    object-fit: contain;
+}
+.logo-s a img{
+    width: 30%;
+    max-width: 30%;
+    max-height: 40px;
+    object-fit: contain;
+}
+.section-title-bar .section-title{
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 12px 12px 0 0;
+}
+.content-box-1 img{
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+.main-content-p{
+    padding: 0 0 0 6px;
+}
+.artist-details-wrapper{
+    margin-top: 40px;
+}
+.star-rating-icons i:is(.bi-star-half, .bi-star-fill){
+    color: #FDCA31;
+}
+.testimonial-name{
+    font-size: 20px;
+}
+.artist-track-item  .track-title h4{
+    font-size: calc(30px + (75 - 30) * ((8vw - 300px) / (1300 - 300))) !important;
+}
+.tracks-list .artist-track-item .track-thumbnail img{
+    width: 78px;
+    height: 68px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.artist-thumbnail img{
+    width: 78px;
+    height: 68px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.track-list-container .track-list-wrapper{
+    height: 440px;
+    overflow: auto;
+}
+section.contact-us div.contact-details-wrapper{
+    width: 100%;
+    max-width: 590px;
+    min-height: 550px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px 0px #F3153714;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-image: url('../imgs/bg-contact-us.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section.contact-us .social-contact{
+    font-size: 25px;
+    gap: 25px;
+}
+.contact-icon-list .icon-list .icon{
+    font-size: 24px;
+}
+.btnbn-c{
+    margin-top: -6px;
+    background-color: #EB415B;
+    border-color: #EB415B;
+    color: #FFFF;
+}
+.btnbn-c:hover{
+    border-color: #f17588 !important;
+    background-color: #f17588 !important;
+    color: #FFFF;
+}
+.btnbn-c:active{
+    color: #FFFF !important;
+}
+@media only screen and (min-width: 768px){
+    .artist-details-wrapper :is(.content-box-2, .content-box-1 img){
+        height: 460px;
+    }
+    .track-list-container .track-list-wrapper{
+        height: 370px;
+    }
+    section.contact-us .social-contact{
+        gap: 40px;
+    }
+    section.contact-us div.contact-details-wrapper{
+        padding: 30px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .artist-navbar-v2{
+        margin-left: 6px;
+        padding: 67px 45px;
+    }
+    .section-title-bar .section-title{
+        font-size: 32px;
+    }
+    .agent-contact-details .icon-list a{
+        font-size: 25px;
+    }
+    .artist-details-wrapper .content-box-2{
+        margin-left: 10px;
+    }
+    .artist-details-wrapper :is(.content-box-2, .content-box-1 img){
+        height: 550px;
+    }
+    .artist-details-wrapper .album-details-wrapper .artist-album-title{
+        font-size: 32px;
+    }
+    .artist-details-wrapper .album-details-wrapper :is(.artist-album-release-date, .artist-album-name){
+        font-size: 20px;
+    }
+    .artist-track-item  .track-title h4{
+        line-height: 32px;
+    }
+    .track-list-container .track-list-wrapper{
+        height: 440px;
+    }
+    section.contact-us .contact-details-wrapper{
+        min-height: 650px;
+    }
+    section.contact-us div.contact-details-wrapper{
+        padding: 40px;
+    }
+    section.contact-us .contact-information h4{
+        font-size: 28px;
+    }
+    section.contact-us .contact-information-tagline{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    nav.navbar-main ul.navbar-nav li a{
+        margin-right: 0px;
+    }
+    .artist-breadcrumb .breadcrumb-item+.breadcrumb-item::before{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: -2px;
+    }
+    .artist-breadcrumb .breadcrumb li a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        vertical-align: middle;
+        line-height: 1.8rem;
+    }
+    .artist-breadcrumb .breadcrumb .breadcrumb-item.active{
+        font-size: 20px;
+    }
+    .artist-navbar-v2{
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .main-content{
+        padding: 20px 30px;
+    }
+    .section-title-bar .section-title{
+        padding: 15px;
+    }
+    .mt-60-r{
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-content .header{
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .main-content{
+        padding: 15px 20px;
+    }
+    .main-content.first-main{
+        padding: 20px 15px;
+    }
+    .artist-navbar-v2{
+        padding:15px;
+    }
+}
